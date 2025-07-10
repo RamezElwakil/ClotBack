@@ -6,7 +6,7 @@ import numpy as np
 import random
 
 # === Flask App Setup ===
-app = Flask(__name__, static_folder='../frontend', static_url_path='/')
+app = Flask(__name__)
 CORS(app)
 
 # === Load ML Components ===
