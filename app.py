@@ -97,9 +97,9 @@ def live_data():
     ]
     return jsonify({
         "ecg": str(random.choice(ecg_pattern)),
-        "hr": random.randint(60, 110),
-        "spo2": round(random.uniform(94, 99), 1),
-        "temp": round(random.uniform(36.5, 38.0), 1)
+        "hr": round(random.uniform(96, 99), 0.4),
+        "spo2": round(random.uniform(96, 99), 0.6),
+        "temp": round(random.uniform(36.5, 38.0), 0.3)
     })
 
 
